@@ -12,10 +12,6 @@ spec:
     {{- end }}
   {{- end }}
   rules:
-    - matches:
-        - path:
-            type: PathPrefix
-            value: "/"
-      backendRefs:
+    - backendRefs:
         - name: {{ include "clearcloud-app.fullname" . }}
           port: {{ .Values.service.port }}

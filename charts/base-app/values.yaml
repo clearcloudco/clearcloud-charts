@@ -81,6 +81,9 @@ readinessProbe:
     path: /
     port: http
 
+httpHealthCheck:
+  requestPath: /
+
 autoscaling:
   enabled: false
   minReplicas: 1
