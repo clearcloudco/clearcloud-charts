@@ -111,3 +111,5 @@ tolerations: []
 affinity: {}
 
 gke: true
+
+gateway: true
