@@ -109,3 +109,5 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+gke: true

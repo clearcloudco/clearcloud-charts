@@ -1,3 +1,4 @@
+{{- if .Values.gke -}}
 apiVersion: networking.gke.io/v1
 kind: HealthCheckPolicy
 metadata:
@@ -18,3 +19,4 @@ spec:
     group: ""
     kind: Service
     name: {{ include "clearcloud-app.fullname" . }}
+{{- end }}
