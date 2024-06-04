@@ -1,0 +1,20 @@
+apiVersion: networking.gke.io/v1
+kind: HealthCheckPolicy
+metadata:
+  name: {{ include "clearcloud-app.fullname" . }}
+  namespace: default
+spec:
+  default:
+    checkIntervalSec: 15
+    config:
+      httpHealthCheck:
+        port: {{ .Values.service.port }}
+        requestPath: {{ .Values.httpHealthCheck.requestPath }}
+      type: HTTP
+    healthyThreshold: 1
+    timeoutSec: 15
+    unhealthyThreshold: 2
+  targetRef:
+    group: ""
+    kind: Service
+    name: {{ include "clearcloud-app.fullname" . }}

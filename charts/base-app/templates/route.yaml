@@ -1,0 +1,17 @@
+apiVersion: gateway.networking.k8s.io/v1beta1
+kind: HTTPRoute
+metadata:
+  name: {{ include "clearcloud-app.fullname" . }}
+spec:
+  parentRefs:
+    - name: external-http
+  {{- if .Values.service.hostnames }}
+  hostnames:
+    {{- range .Values.service.hostnames }}
+    - {{ . | quote }}
+    {{- end }}
+  {{- end }}
+  rules:
+    - backendRefs:
+        - name: {{ include "clearcloud-app.fullname" . }}
+          port: {{ .Values.service.port }}
