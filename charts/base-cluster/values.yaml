@@ -1,0 +1,7 @@
+gitRepository:
+  url:
+  branch: master
+gateway:
+  annotations: {}
+  gatewayClassName:
+  static_ip_name:
