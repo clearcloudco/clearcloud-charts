@@ -10,7 +10,7 @@ spec:
   gatewayClassName: {{.Values.gateway.gatewayClassName}}
   addresses:
     - type: NamedAddress
-      value: {{.Values.dns.static_ip_name}}
+      value: {{.Values.gateway.static_ip_name}}
   listeners:
     - name: https
       protocol: HTTPS
