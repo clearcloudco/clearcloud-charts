@@ -5,3 +5,4 @@ gateway:
   annotations: {}
   gatewayClassName:
   static_ip_name:
+  dnsName:
