@@ -6,5 +6,7 @@ metadata:
 spec:
   interval: 5m0s
   url: {{ .Values.gitRepository.url }}
+  secretRef:
+    name: git-bearer-token
   ref:
     branch: {{ .Values.gitRepository.branch }}
