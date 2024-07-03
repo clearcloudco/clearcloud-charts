@@ -1,6 +1,7 @@
 gitRepository:
   url:
   branch: master
+  sshPrivateKey:
 gateway:
   annotations: {}
   gatewayClassName:
