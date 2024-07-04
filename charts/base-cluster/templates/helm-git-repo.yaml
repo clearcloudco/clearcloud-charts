@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: clearcloud-helm
+  namespace: default
+spec:
+  interval: 5m0s
+  url: https://github.com/clearcloudco/clearcloud-charts
+  ref:
+    branch: {{ .Values.gitRepository.branch }}
