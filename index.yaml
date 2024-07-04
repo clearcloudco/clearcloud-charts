@@ -44,6 +44,16 @@ entries:
   clearcloud-cluster:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-07-04T04:06:46.311951609Z"
+    description: A Helm chart for ClearCloud clusters
+    digest: cfb8ebe4b08780a315d97838de9cca7201ba4ae21ceb207a1f83aecf3c92d556
+    name: clearcloud-cluster
+    type: application
+    urls:
+    - https://github.com/clearcloudco/clearcloud-charts/releases/download/clearcloud-cluster-0.1.6/clearcloud-cluster-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-07-03T21:27:22.271960215Z"
     description: A Helm chart for ClearCloud clusters
     digest: 8a3cab0f354b8fc6168e890ad60388dd0ed1c24253540312ba7af7dfb85fd472
@@ -102,4 +112,4 @@ entries:
     urls:
     - https://github.com/clearcloudco/clearcloud-charts/releases/download/clearcloud-cluster-0.1.0/clearcloud-cluster-0.1.0.tgz
     version: 0.1.0
-generated: "2024-07-03T21:27:22.271990642Z"
+generated: "2024-07-04T04:06:46.312003776Z"
