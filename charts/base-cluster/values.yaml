@@ -1,7 +1,9 @@
 gitRepository:
   url:
   branch: master
-  bearerToken:
+  privateKey:
+  publicKey:
+  knownHost:
 gateway:
   annotations: {}
   gatewayClassName:
